@@ -32,6 +32,12 @@ nav{
     padding: 1rem;
 }
 
+a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
+
 
 main {
     grid-column: 1/2;
