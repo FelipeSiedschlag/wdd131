@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="Welcome to the WDD131 course homepage by Felipe Siedschlag, a web development student from Brazil studying at BYU-Idaho. This page serves as a gateway my Linkedin, course resources, scriptures, my final project and important updates for a smooth learning experience.">
+    <meta name="author" content="Felipe Siedschlag">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;
+    1,900&display=swap" rel="stylesheet">   
+    
+    <title>WDD 131 - Dynamic Web Fundamentals - Felipe Siedschlag</title>
 </head>
 <body>
-    <h1>WDD 131 - Felipe Siedschlag</h1>
+    <header>    
+        <h1>WDD 131: Dynamic Web Fundamentals - Felipe Siedschlag</h1>
+        <nav>
+            <a href="www.linkedin.com/in/felipe-siedschlag">LinkedIn</a>
+            <a href="https://byupw.instructure.com/.">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/122?lang=por&id=p8#p8">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card" >
+            <h2>About Me</h2>
+
+            <div id="main_card">
+            <img src="images/profile.jpg" alt="Profile picture" id="profile_picture">
+            <p class="text" id="paragraph1">Hello! My name is Felipe Siedschlag, and I'm 23 years old. I'm from Brazil, and I live in the beautiful state of Rio Grande do Sul. I had the privilege of serving as a LDS missionary in the Brazil Manaus Mission from 202-2023, an experience that shaped who I am today. I'm happily married to the most beautiful woman in the world, who brings so much joy into my life. I'm excited to continue learning and growing both personally and professionally.</p>
+
+            <h3 class="text">Rio Grande do Sul, Brazil</h3>
+            <P class="text" id="paragraph2">Brazil is a vibrant country in South America, known for its culture, landscapes, and warm people. Rio Grande do Sul, in the south, blends European influences, particularly from Italy and Germany, with traditional Brazilian culture. Famous for its gaucho heritage, the state features rolling hills, vineyards, and the pampas region, with a more temperate climate, making it perfect for those who enjoy nature, history, and unique traditions.</P>
+            <figure>
+                <img src="images/flag.jpg" alt="Brazil Flag" id="flag">
+                <figcaption>Official Flag of Brazil</figcaption>
+            </figure>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            
+            <div id="card2">
+            <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://placehold.co/">Image Placeholder</a></li>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Felipe Siedschlag | Brazil </p>
+        <p id="lastmodified"></p>
+    </footer>
+
 </body>
 </html>
