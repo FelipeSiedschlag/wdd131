@@ -1,15 +1,15 @@
-// Função para alternar a visibilidade do menu
+
 function toggleMenu() {
     const nav = document.querySelector("nav");
     const navBtn = document.querySelector(".nav-btn");
 
-    // Alterna a classe 'open' no menu
+
     nav.classList.toggle("open");
-    // Alterna o texto do botão entre ☰ e ❎
+
     navBtn.textContent = nav.classList.contains("open") ? "x" : "☰";
 }
 
-// Verifica o redimensionamento da tela
+
 window.addEventListener("resize", function() {
     const navBtn = document.querySelector(".nav-btn");
     const nav = document.querySelector("nav");
