@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta src="author" content="Felipe Siedschlag">
     <meta src="descriptrion" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
 
-    <link rel="stylesheet" href="scripts/temples.js" defer>
+    <script src="scripts/temples.js" defer></script>
     <title>Temple album</title>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
 
+        <button class="nav-btn" onclick="toggleMenu()">☰</button>
+         <!-- <a id="menu" href="#"></a> -->
+
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="">Home</a></li>
                 <li><a href="">Old</a></li>
                 <li><a href="">New</a></li>
                 <li><a href="">Large</a></li>
-                <li><a href=""><Small></Small></a></li>
+                <li><a href="">Small</a></li>
             </ul>
         </nav>
 
@@ -31,12 +40,68 @@
     <main>
         <h1>Home</h1>
 
+        <div class="container">
+        <!-- 1 -->
         <figure>
-            <img src="" alt="">
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
             <figcaption>Brasil Manaus</figcaption>
         </figure>
+
+        <!-- 2 -->
+        <figure>
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
+            <figcaption>Brasil Manaus</figcaption>
+        </figure>
+
+        <!-- 3 -->
+        <figure>
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
+            <figcaption>Brasil Manaus</figcaption>
+        </figure>
+
+        <!-- 4 -->
+        <figure>
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
+            <figcaption>Brasil Manaus</figcaption>
+        </figure>
+
+        <!-- 5 -->
+        <figure>
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
+            <figcaption>Brasil Manaus</figcaption>
+        </figure>
+
+        <!-- 6 -->
+        <figure>
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
+            <figcaption>Brasil Manaus</figcaption>
+        </figure>
+
+        <!-- 7 -->
+        <figure>
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
+            <figcaption>Brasil Manaus</figcaption>
+        </figure>
+
+        <!-- 8 -->
+        <figure>
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
+            <figcaption>Brasil Manaus</figcaption>
+        </figure>
+
+        <!-- 9 -->
+        <figure>
+            <img src="images/manaus_temple.jpg" alt="" class="pictures">
+            <figcaption>Brasil Manaus</figcaption>
+        </figure>
+        </div>
         
     </main>
-    <footer> </footer>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Felipe Siedschlag | Brazil </p>
+        <p id="lastmodified"></p>
+    </footer>
+
 </body>
 </html>
