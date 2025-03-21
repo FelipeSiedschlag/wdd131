@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Siedschlag">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+    <title>Place</title>
+</head>
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width:700px )" srcset="images/jaguar-small.webp" class="hero"> 
+            <source media="(max-width:1000px )" srcset="images/jaguar-medium.webp" class="hero">
+            <img src="images/jaguar-large.webp" alt="" class="hero"> 
+        </picture>
+        <section class="info-board">
+            <h2>Data</h2>
+            <label for="Area">Area:</label>
+            <input type="text" name="area" value="8.510.000 sq km">
+            <label for="">Population:</label>
+            <input type="text" name="population" value="211,1 million">
+            <label for="capital">Capital</label>
+            <input type="text" name="capital">
+            <label for="languages">Languages:</label>
+            <input type="text" name="languages">
+            <label for="currency">Currency:</label>
+            <input type="text" name="currency">
+            <label for="timeZone">Time Zone:</label>
+            <input type="text" name="timeZone">
+            <label for="callingCode">Calling Code:</label>
+            <input type="text" name="callingCode">
+        </section>
+        <section class="info-board">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="" width="100px" id="weatherImg">
+            <label for="temperature">Temperature</label>
+            <input type="text" name="temperature">
+            <label for="conditions">Conditions:</label>
+            <input type="text" name="conditions">
+            <label for="wind">Wind:</label>
+            <input type="text" name="wind">
+            <label for="windChill">Wind Chill:</label>
+            <input type="text" name="windChill">
+        </section>
+    </main>
+    <footer>
+        
+    <footer>
+        <p>©<span id="currentyear"></span> | Felipe Siedschlag | Brazil </p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
+
