@@ -6,13 +6,15 @@
     --detail-color:#acacac;
 
 
-    --brazil-color: #626F47;
-    --brazil-color2: #A4B465;
-    --brazil-color3: #FFCF50;
-    --brazil-font: #FEFAE0;
+    --brazil-color: #4d5c2d;
+    --brazil-color2: #8aa620;
+    --brazil-color3: #ffb700;
+    --brazil-font: #fff3c7;
 
     --heading-font: "Poppins", sans-serif;
     --text-font: "Lato", sans-serif;
+    --font-size: 20px;
+    --font-size-large: 30px;
 }
 
 *{
@@ -29,12 +31,12 @@ h1, h2, h3{
 
 header{
     background-color: var(--brazil-color);
-    border-bottom: 2rem solid #A4B465;
+    border-bottom: 2rem solid var(--brazil-color2);
 }
 
 h1{
     text-align: center;
-    color: var(--brazil-font);
+    color: White;
     padding: 1.4rem;
     font-size: 35px;
 }
@@ -42,7 +44,7 @@ h1{
 .hero{
     width: 100%;
     height: auto;
-    border-bottom: 0.7rem solid var(--brazil-color2);
+    border-bottom: 0.7rem solid var(--brazil-color3);
 }
 
 h2 {
@@ -66,10 +68,17 @@ section{
 label{
     grid-column: 1/2;
     text-align: right;
+    font-weight: 700;
+    font-size: var(--font-size);
+
 }
 
 input{
     grid-column: 2/3;
+    font-weight: 400;
+    border: none;
+    font-size: var(--font-size);
+    background-color: transparent;
 }
 
 
@@ -77,5 +86,6 @@ footer {
     text-align: center;
     color: var(--brazil-font);
     background-color: var(--brazil-color);
-    padding: 1rem;
+    font-weight: 600;
+    padding: 10px;
 }

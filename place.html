@@ -6,6 +6,10 @@
     <meta name="author" content="Felipe Siedschlag">
     <meta name="description" content="">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
 
@@ -19,28 +23,33 @@
     <main>
         <picture>
             <source media="(max-width:700px )" srcset="images/jaguar-small.webp" class="hero"> 
-            <source media="(max-width:1000px )" srcset="images/jaguar-medium.webp" class="hero">
+            <source media="(max-width:1024px )" srcset="images/jaguar-medium.webp" class="hero">
             <img src="images/jaguar-large.webp" alt="" class="hero"> 
         </picture>
-        <section class="info-board">
-            <h2>Data</h2>
+        <section class="info-board" id="data">
+            <div class="section-title">
+                <h2>Data</h2>
+            </div>
+            
             <label for="Area">Area:</label>
             <input type="text" name="area" value="8.510.000 sq km">
             <label for="">Population:</label>
             <input type="text" name="population" value="211,1 million">
             <label for="capital">Capital</label>
-            <input type="text" name="capital">
+            <input type="text" name="capital" value="Brasília">
             <label for="languages">Languages:</label>
-            <input type="text" name="languages">
+            <input type="text" name="languages" value="Portuguese">
             <label for="currency">Currency:</label>
-            <input type="text" name="currency">
+            <input type="text" name="currency" value="Brazilian Real">
             <label for="timeZone">Time Zone:</label>
-            <input type="text" name="timeZone">
+            <input type="text" name="timeZone" value="UTC−03:00">
             <label for="callingCode">Calling Code:</label>
-            <input type="text" name="callingCode">
+            <input type="text" name="callingCode" value="+55">
         </section>
-        <section class="info-board">
-            <h2>Weather</h2>
+        <section class="info-board" id="weather">
+            <div class="section-title">
+                <h2>Weather</h2>
+            </div>
             <img src="images/weather.svg" alt="" width="100px" id="weatherImg">
             <label for="temperature">Temperature</label>
             <input type="text" name="temperature">
