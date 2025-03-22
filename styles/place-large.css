@@ -23,6 +23,7 @@
         max-width: 2000px; 
         box-sizing: border-box;
         margin: 0 auto;
+        padding-bottom: 0;
     }
 
 
@@ -30,11 +31,14 @@
     section{
         background-color: rgba(255, 255, 255, 0.7);
         position: absolute; 
+        padding-bottom: 20px;
     }
 
     label{
         font-size: var(--font-size-large);
     }
+
+
 
     input {
         font-size: var(--font-size-large);
@@ -53,13 +57,36 @@
         right: 5%;
     }
 
+    #weather-title{
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #weather-title::after{
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("../images/weather-black.svg");
+        background-size: contain;
+        background-repeat: no-repeat;   
+    }
+
+    #weatherImg{
+        display: none;
+
+    }
+
     .section-title{
         background-color:#ffb700;
         position: relative;
         padding:  20px 20px 20px 20px;
-        padding-right: 40%;
+        padding-right: 70%;
         left: -30px;
     }
+
+
     
 
     h2{
